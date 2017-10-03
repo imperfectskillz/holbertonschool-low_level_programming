@@ -1,0 +1,12 @@
+#include "holberton.h"
+
+/**
+ *_puts - prints
+ *@str: array
+ *
+ *Return: something
+ */
+
+void _puts(char *str)
+{
+	

@@ -1,0 +1,39 @@
+#include "holberton.h"
+
+/**
+ *print_to_98 - print to 98
+ *
+ *Return: numbers
+ */
+
+void print_to_98(int n)
+{
+	int i = '98';
+
+	if (n < 98)
+	{
+		while (n < 98)
+		{
+			_putchar(n + '0');
+			_putchar(',');
+			_putchar(' ');
+			n++;
+		}
+		_putchar('98');
+	}
+	else if (n > 98)
+	{
+		while (n > 98)
+		{
+			_putchar(n + '0');
+			_putchar(',');
+			_putchar(' ');
+			n--;
+		}
+		_putchar('98');
+	}
+	else
+	{
+		_putchar('98');
+	}
+}
