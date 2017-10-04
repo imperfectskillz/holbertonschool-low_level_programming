@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- *strpbrk - aweoij
+ *_strpbrk - aweoij
  *@s: awef
  *@accept: aewofij
  *Return: awef
