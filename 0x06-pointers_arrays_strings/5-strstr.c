@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- *strstr - awoefij
+ *_strstr - awoefij
  *@haystack: aweofij
  *@needle: aweofij
  *Return: aoifj
