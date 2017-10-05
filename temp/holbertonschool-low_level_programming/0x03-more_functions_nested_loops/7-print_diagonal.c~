@@ -1,0 +1,11 @@
+#include "holberton.h"
+
+/**
+ *print_diagonal- prints
+ *
+ *Return: something
+ */
+
+void print_diagonal(int n)
+{
+	

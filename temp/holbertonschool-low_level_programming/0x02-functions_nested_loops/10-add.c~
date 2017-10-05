@@ -1,0 +1,18 @@
+#include "holberton.h"
+
+/**
+ *add - adds a and b
+ *@a: add
+ *@b: add
+ *Return: rue
+ */
+
+int add(int, int)
+{
+	int a;
+	int b;
+
+	c = a + b;
+	return (c);
+
+}
