@@ -3,7 +3,7 @@
 /**
  *main - prints arguemnts each line
  *@argc: number of commands
- *@argc: array
+ *@argv: array
  *Return: 0
  */
 
