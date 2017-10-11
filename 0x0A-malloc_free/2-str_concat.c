@@ -27,7 +27,7 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	for (i = 0; i < length2; i++)
 	{
-		if (i < length2)
+		if (i < length1)
 		{
 			result[i] = length1[i];
 		}
