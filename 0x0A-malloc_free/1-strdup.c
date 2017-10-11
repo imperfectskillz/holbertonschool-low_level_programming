@@ -1,8 +1,6 @@
 #include "holberton.h"
 #include <stdlib.h>
 
-int _strlen(char *s);
-
 /**
  *_strdup - returns a pointer to newly allocated space
  *@str: given string
