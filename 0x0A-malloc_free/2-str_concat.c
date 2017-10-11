@@ -29,7 +29,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		if (i < length1)
 		{
-			result[i] = length1[i];
+			result[i] = s1[i];
 		}
 		else
 		{
