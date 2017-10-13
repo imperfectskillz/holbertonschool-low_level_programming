@@ -19,10 +19,10 @@ int _strlen(char *s)
 
 
 /**
- * sring_nconcat- concatetnates two strings
+ * string_nconcat- concatetnates two strings
  *@s1: first string
  *@s2: second string
- *@n: number of bytes 
+ *@n: number of bytes
  *Return: pointer
  */
 
