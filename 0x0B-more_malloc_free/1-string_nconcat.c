@@ -48,7 +48,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		return (NULL);
 
 	for (i = 0; i < length1; i++)
-		str[i] = s1[i];
+		p[i] = s1[i];
 	for (i = 0; i < n; i++)
 		p[i + length1] = s2[i];
 	p[i + length1] = '\0';
