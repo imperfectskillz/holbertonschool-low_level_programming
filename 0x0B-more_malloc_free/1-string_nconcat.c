@@ -32,7 +32,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int length1;
 	unsigned int length2;
 	unsigned int i;
-	char nothing = '\0'
+	char nothing = '\0';
 
 	if (s1 == NULL)
 		s1 = &nothing;
