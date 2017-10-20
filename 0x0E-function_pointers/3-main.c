@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	if (get_op_func(argv[2][1]) != NULL)
+	if (get_op_func(argv[2]) == NULL)
 	{
 		printf("Error\n");
 		exit(99);
@@ -30,8 +30,9 @@ int main(int argc, char *argv[])
 	i = atoi(argv[1]);
 	j = atoi(argv[3]);
 
-	if ((j == 0 && (strcmp(argv[2], "/") == 0)) || (j == 0 && (strcmp(argv[2], "%") == 0)))
-       	{
+	if (((strcmp(argv[2], "/") == 0) || (strcmp(argv[2], "%") == 0)) && j ==
+	    0)
+	{
 		printf("Error\n");
 		exit(100);
 	}
