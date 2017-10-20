@@ -19,7 +19,7 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i;
 
-	for (i = 0; ops[i].op != NULL)
+	for (i = 0; ops[i].op != NULL; i++)
 	{
 		if (*ops[i].op == *s)
 			return (ops[i].f);

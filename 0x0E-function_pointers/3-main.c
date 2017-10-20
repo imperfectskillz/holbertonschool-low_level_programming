@@ -1,6 +1,7 @@
 #include "3-calc.h"
 #include <stdio.h>
-#include <stdlib.H.
+#include <stdlib.h>
+#include <string.h>
 
 /**
  *main - performs main function
@@ -29,7 +30,7 @@ int main(int argc, char *argv[])
 	i = atoi(argv[1]);
 	j = atoi(argv[3]);
 
-	if ((j == 0 && argv[2] == "/") || (j == 0 && argv[2] == "%"))
+	if ((j == 0 && (strcmp(argv[2], "/") == 0)) || (j == 0 && (strcmp(argv[2], "%") == 0)))
        	{
 		printf("Error\n");
 		exit(100);
