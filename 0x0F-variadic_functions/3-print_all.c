@@ -12,7 +12,7 @@ void print_all(const char * const format, ...)
 {
 	va_list valist;
 	char *p;
-
+	int flag;
 	int i;
 
 	va_start(valist, format);
@@ -24,22 +24,29 @@ void print_all(const char * const format, ...)
 		switch (format[i])
 		{
 		case 'c':
+			flag = 0;
 			printf("%c", va_arg(valist, int));
 			break;
 		case 'i':
+			flag = 0;
 			printf("%d", va_arg(valist, int));
 			break;
 		case 'f':
+			flag = 0;
 			printf("%f", va_arg(valist, double));
 			break;
 		case 's':
+			flag = 0;
 			p = va_arg(valist, char *);
 			if (p == NULL)
 				printf("(nil)");
 			printf("%s", p);
 			break;
+		default:
+			flag = 1;
+			break;
 		}
-		if (format[i] != '\0')
+		if (format[i] != '\0' && flag != 1)
 			printf(", ");
 		i++;
 	}
