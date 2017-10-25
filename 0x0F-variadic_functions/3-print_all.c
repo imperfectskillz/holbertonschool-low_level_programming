@@ -37,8 +37,11 @@ void print_all(const char * const format, ...)
 			flag = 0;
 			p = va_arg(valist, char*);
 			if (p == NULL)
-				p = "(nil)";
-			printf("%s", p);
+			{
+				printf("(nil)");
+			}
+			else
+				printf("%s", p);
 			break;
 		default:
 			flag = 1;
@@ -49,5 +52,4 @@ void print_all(const char * const format, ...)
 		i++;
 	}
 	printf("\n");
-	return (0);
 }
