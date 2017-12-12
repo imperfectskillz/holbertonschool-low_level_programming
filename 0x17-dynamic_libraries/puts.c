@@ -1,7 +1,18 @@
 #include "holberton.h"
-#include <stdio.h>
 
-void _puts(char *s)
+/**
+ * _puts - prints a string
+ *
+ * @str: string to be printed
+ */
+
+void _puts(char *str)
 {
-	printf("%s", s);
+	int i;
+
+	for (i = 0; str[i]; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
 }
