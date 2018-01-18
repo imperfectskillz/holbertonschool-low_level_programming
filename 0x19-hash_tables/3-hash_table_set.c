@@ -1,4 +1,4 @@
-#include "hash.h"
+#include "hash_tables.h"
 
 /**
  *hash_table_set - sets node
@@ -8,7 +8,7 @@
  *Return: 0
  */
 
-int hash_table_set *ht, const char *key, const char *value)
+int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index = 0;
 	hash_node_t *new;
@@ -22,5 +22,26 @@ int hash_table_set *ht, const char *key, const char *value)
 		return (0);
 	index = key_index((const unsigned char *)key, ht->size);
 	temp = ht->array[index];
+	while (temp != NULL)
+	{
+		if (strcmp(key, temp->key) ==0)
+		{
+			temp->value = strdup(value);
+			return (1);
+		}
+		temp = temp->next;
+	}
+	new->value = strdup(value);
+	new->key = strdup(key);
 
+	if (new->key == NULL || new->value == NULL)
+	{
+		free(new);
+		return (0);
+	}
+	new->next = ht->array[index];
+	ht->array[index] = new;
+
+	return (1);
+}
 	
