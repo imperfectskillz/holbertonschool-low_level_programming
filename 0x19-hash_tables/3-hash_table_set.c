@@ -24,7 +24,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	temp = ht->array[index];
 	while (temp != NULL)
 	{
-		if (strcmp(key, temp->key) ==0)
+		if (strcmp(key, temp->key) == 0)
 		{
 			temp->value = strdup(value);
 			return (1);
@@ -44,4 +44,3 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	return (1);
 }
-	
