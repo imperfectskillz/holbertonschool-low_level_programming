@@ -28,9 +28,10 @@ void insertion_sort_list(listint_t **list)
 			after->prev = after->prev->prev;
 			after->next->prev = after;
 
-			if (after->prev == NULL)
+			if (after->prev != NULL)
+				after->prev->next = after;
+			else
 				*list = after;
-			
 			print_list(*list);
 		}
 		after = rest;
