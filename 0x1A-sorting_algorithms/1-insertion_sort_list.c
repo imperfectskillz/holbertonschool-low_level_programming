@@ -21,10 +21,10 @@ void insertion_sort_list(listint_t **list)
 		rest = after->next;
 		while (after->prev != NULL && after->n < after->prev->n)
 		{
-			before->next = after->next;
-			after->next = before;
-			before = after->prev;
-			after->prev = after;
+			after->prev->next = after->next;
+			after->next = after->prev;
+			after->prev = after->prev->prev;
+			after->next->prev = after;
 
 			if (after->prev == NULL)
 				*list = after;
