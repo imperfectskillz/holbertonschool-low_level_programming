@@ -8,4 +8,6 @@
 
 int binary_tree_balanace(const binary_tree_t *tree)
 {
-	
+	if (tree == NULL)
+		return 0;
+}
