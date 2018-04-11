@@ -1,7 +1,0 @@
-[user]
-	email = j.choi.89@gmail.com
-	name = imperfectskillz
-[push]
-	default = matching
-[credential]
-	helper = cache --timeout=99999999
